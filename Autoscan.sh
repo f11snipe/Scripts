@@ -42,10 +42,10 @@ echo -e "Select multiple tools for scan
    #  3. Nikto                         #
    #  4. Sublister                     #
    #  5. Gobuster                      #
-   #  6. Sqlmap                        #
+   #  6. Nuclei                        #
    #  7. Wpscan                        #
-   #  8. Hamster     
-   #  9. Nuclei
+   #  8. Hamster                       #
+   #  9. Sqlmap                        #
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 "
 
