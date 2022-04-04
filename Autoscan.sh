@@ -44,7 +44,8 @@ echo -e "Select multiple tools for scan
    #  5. Gobuster                      #
    #  6. Sqlmap                        #
    #  7. Wpscan                        #
-   #  8. Hamster                       #
+   #  8. Hamster     
+   #  9. Nuclei
    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 "
 
@@ -59,7 +60,10 @@ case $tool in
         3) nikto -url $IP -no404 -C all -Format txt -o nikto;;
         4) sublist3r -d $IP -o sublister;;
         5) gobuster dir $IP -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -q -t 3 -r -x php,js,db,xml,html -o gobuster;;
+        6) sudo nuclei -u $IP 
+
         *) 
+        
         echo "invalid option script restarting"
         clear
         sleep 3;;
